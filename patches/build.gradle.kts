@@ -1,16 +1,16 @@
-group = "app.template"
+group = "com.dr4w"
 
 patches {
     // TODO: Update this section with your project details.
-    about {
-        name = "UserXYZ Patches"
-        description = "Patches for apps I like"
-        source = "git@github.com:UserXYZ/morphe-patches.git"
-        author = "Awesome dev"
-        contact = "na"
-        website = "na"
-        license = "GPLv3"
-    }
+   about {
+    name = "dr4w Patches"
+    description = "Patches for NextGP and other apps"
+    source = "git@github.com:dr4w/morphe-patches.git"
+    author = "dr4w"
+    contact = "na"
+    website = "na"
+    license = "GPLv3"
+}
 }
 
 kotlin {
