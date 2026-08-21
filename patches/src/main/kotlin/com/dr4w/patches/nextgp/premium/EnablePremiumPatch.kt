@@ -13,11 +13,13 @@ val enablePremiumPatch = bytecodePatch(
     compatibleWith(COMPATIBILITY_NEXTGP)
 
     execute {
-        PremiumUpdateFingerprint.method.replaceInstructions(
+        // Rimuove il controllo isDebuggable() da forceUpdateBypass()
+        // così può essere chiamato sempre, non solo in debug
+        ForceUpdateBypassFingerprint.method.replaceInstructions(
             0,
             """
                 const/4 v0, 0x1
-                invoke-virtual {p0, v0}, Lcom/jscti/commons/ui/premium/PremiumState;->update(Z)V
+                sput-boolean v0, Lcom/jscti/commons/ui/premium/PremiumState;->_hasBypass:Z
                 return-void
             """
         )
