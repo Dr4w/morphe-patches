@@ -10,11 +10,5 @@ object ForceUpdateBypassFingerprint : Fingerprint(
     definingClass = "Lcom/jscti/commons/ui/premium/PremiumState;",
     name = "forceUpdateBypass",
     returnType = "V",
-    parameters = listOf("Landroid/content/Context;", "Z"),
-    filters = listOf(
-        methodCall(
-            name = "isDebuggable"
-        ),
-        opcode(Opcode.IF_EQZ)
-    )
+    parameters = listOf("Landroid/content/Context;", "Z")
 )
