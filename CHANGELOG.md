@@ -1,3 +1,9 @@
+## [1.0.3](https://github.com/Dr4w/morphe-patches/compare/v1.0.2...v1.0.3) (2026-08-21)
+
+### 🐛 Bug Fixes
+
+* bypass debuggable check in premium state ([764b112](https://github.com/Dr4w/morphe-patches/commit/764b11286459d347cfdadb4bd7c486505213ed4f))
+
 ## [1.0.2](https://github.com/Dr4w/morphe-patches/compare/v1.0.1...v1.0.2) (2026-08-21)
 
 ### 🐛 Bug Fixes
